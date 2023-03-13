@@ -1,0 +1,285 @@
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    *{
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+    }
+
+    /*  PARTE APRESENTAÇAO DO SITE  */
+
+
+   
+    .destaque{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        width: 100vw;
+    }
+    .card{
+        margin: 10px;
+        border-radius: 10px;
+        width: 220px;
+        height: 300px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text_block{
+        display: none;
+    }
+
+    .card:hover .text_block{
+        display: block;
+        
+
+    }
+
+   
+
+    .card h2{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        background-color: red;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+
+   .card img{
+        max-width: 100%;
+        height: 300px;
+        
+        border-radius: 10px;
+        
+    }
+    .card:hover{
+        transform: scale(1.1);
+        
+
+    }
+    
+    
+    
+    
+        
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+    .home h1{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4vw;
+        display: block;
+        text-align: center;
+        text-shadow: 1px 1px 5px rgb(221, 217, 243);
+        
+        
+    }
+
+    .logoHome{
+       width: 40vw;
+    }
+
+
+    /* BARREA DE NAVEGAÇAO  */
+
+    .navegaçao a {
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 5px;
+        margin-left: 15px;
+        
+        
+    }
+
+    .navegaçao{   
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        background-color: #3700ff
+        
+    }
+
+    .navegaçao a:hover{
+        
+        color: black;
+        background-color: #F2A950;
+        border-radius: 5px;
+
+    }
+
+    .conteiner{
+        display: flex;
+        align-items: center;
+        
+    }
+
+
+    /*  ICONE DE CONSOLES */ 
+
+    .principal{   
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: white;
+        
+    }
+
+    .console:hover .legenda{
+        display: block;
+        padding: 15px;
+        border-radius: 10px;
+        
+    }
+
+    .console:hover{
+        position: relative;
+        background-color: #3700ff;
+        border-radius: 10px;
+        width: 360px; 
+        transition-duration: 0.4s;   
+    }
+    .console:hover img {
+        filter: blur(3px);
+        
+    }
+
+    .console{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 200px;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        
+        
+    }
+    .iConsole{
+        height: 80%; 
+        border-radius: 50px;
+            
+    }
+
+
+    .legenda{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: none;
+        position: absolute;
+        text-shadow: 1px 1px 5px black;
+        font-size: 4vh;
+        
+    }
+
+
+
+
+    /* LISTA DE JOGOS */
+
+    .listjogos{   
+        border-radius: 15px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 800px;
+        height: 250px;
+        overflow-x: auto;
+        
+    }
+
+    .listjogos img{
+        height: 160px;
+        margin: 10px;
+        
+    }
+
+    .listIso{
+        height: 250px;
+        margin: 5px;
+        display: flex;
+        justify-content: start;
+        align-items:center;
+        padding-top: 15px;
+        position: relative;
+        
+    }
+    .ijogos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        margin-left: 15px;
+        min-width:120px;
+        border-radius: 9px;
+        background-color: #F2A950;
+        
+    }
+
+
+
+    .ijogos:hover{
+        justify-content: center;
+        transition-duration: 0.4s;   
+        transform: scale(1.1);
+        background-color: #3700ff;
+        cursor: pointer;
+    }
+        
+
+
+    ::-webkit-scrollbar-thumb{
+        background-color: #690f0785;
+        border-radius: 15px 15px 15px 15px;
+    
+    }
+    ::-webkit-scrollbar{
+        background-color: #F2A950;
+        border-radius: 15px 15px 15px 15px;
+    }
+    @media screen and (max-width: 900px) {
+        .principal2{
+        display: none;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
